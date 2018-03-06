@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.kaisagroup</groupId>
-    		<artifactId>ecloud_micro</artifactId>
+    		<artifactId>kaisagroup_micro</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
