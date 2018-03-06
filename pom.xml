@@ -26,6 +26,7 @@
         <module>kaisagroup_zipkin</module>
         <module>testa-service</module>
         <module>testb-service</module>
+        <module>testc-service</module>
         <module>kaisagroup_boot</module>
     </modules>
 
