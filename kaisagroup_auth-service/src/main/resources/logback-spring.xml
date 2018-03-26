@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <jmxConfigurator/>
+</configuration>-->
+
+
+<configuration>
+    <contextName>SpringBootDemo</contextName>
+    <!-- 控制台 appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+        <!-- 此日志文件只记录info级别的 ThresholdFilter是临界值过滤器 过滤掉低于指定临界值的日志。 -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <!-- 设置过滤级别 -->
+            <level>debug</level>
+        </filter>
+    </appender>
+
+    <!--控制台打印资源加载信息 等级从trace开始 TRACE < DEBUG < INFO < WARN < ERROR-->
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

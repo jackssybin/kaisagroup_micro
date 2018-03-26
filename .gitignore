@@ -1,0 +1,7 @@
+/.idea
+
+/*.iml
+/./*.iml
+/*.md
+/kaisagroup_auth-service/*.iml
+/kaisagroup_boot/*.iml
