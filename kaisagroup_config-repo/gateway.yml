@@ -30,3 +30,6 @@ zuul:
     testb-service:
       path: /testb/**
       sensitiveHeaders:
+    testb-service:
+      path: /boot/**
+      sensitiveHeaders:
